@@ -51,7 +51,7 @@ const generateColumn = (props, themeColours) => {
     return ` <g id="issue-colum-${index}" transform="translate(${
         26 + 17 * index + 138 * index
     }, 68)">
-            <rect id="not-done-box" fill="${color}" opacity="0.3" x="0" y="17" width="138" height="174" rx="3"></rect>
+            <rect id="not-done-box" fill="${color}" opacity="${themeColours.boxAlpha}" x="0" y="17" width="138" height="174" rx="3"></rect>
             <rect id="issue-percentage-done-box" fill="${color}" x="0" y="9" width="138" height="${11 + (171 * (noCompleted/total))}" ${(noCompleted/total)>=1?"rx='3'":''}></rect>
             <rect id="issue-bg" fill="${color}" x="0" y="0" width="138" height="17" rx="3"></rect>
             
@@ -114,7 +114,8 @@ async function main(req, res) {
     const isDarkMode = (theme=="dark")
     const themeColours = {
         text: !isDarkMode?'#020202':'#fff',
-        bg: isDarkMode?'#161622':'#F9F9F8'
+        bg: isDarkMode?'#161622':'#F9F9F8',
+        boxAlpha: isDarkMode?0.3:0.35,
     }
     res.statusCode = 200;
     res.send(`<?xml version="1.0" encoding="UTF-8"?>
