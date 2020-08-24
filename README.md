@@ -22,5 +22,4 @@ theme can be `light` or `dark`.
 the api can only handle 5k requests an hour. that is the limit set by the github api.
 
 ## Deploy your own:
-to make your own cool version of this card, just press the button bellow and deploy it to vercel.
-
+to make your own cool version of this card, just press the button bellow and deploy it to vercel. You will also need to create a github personal access token and save it in your vercel environment variables under `PAT`. This token should have access to only the public repo scope, that is all it needs.
