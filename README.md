@@ -16,7 +16,7 @@ theme can be `light` or `dark`.
 
 
 ### Dark mode: `theme=dark`
-![dark mode](https://issue-card.vercel.app/api/midataur/mathsender?one=Makeitwork&two=Makeitgood&three=Makeitfast&theme=light)
+![dark mode](https://issue-card.vercel.app/api/midataur/mathsender?one=Makeitwork&two=Makeitgood&three=Makeitfast&theme=dark)
 
 ## Warning:
 the api can only handle 5k requests an hour. that is the limit set by the github api.
