@@ -117,6 +117,7 @@ async function main(req, res) {
         bg: isDarkMode?'#161622':'#F9F9F8',
         boxAlpha: isDarkMode?0.3:0.35,
     }
+    res.setHeader("Content-Type", "image/svg+xml");
     res.statusCode = 200;
     res.send(`<?xml version="1.0" encoding="UTF-8"?>
     <svg width="527px" height="335px" viewBox="0 0 527 335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
