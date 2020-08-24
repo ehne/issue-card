@@ -10,7 +10,7 @@ theme can be `light` or `dark`.
 
 ## Preview:
 
-### Light mode:`theme=light`
+### Light mode: `theme=light`
 ![light mode](https://issue-card.vercel.app/api/midataur/mathsender?one=Makeitwork&two=Makeitgood&three=Makeitfast&theme=light)
 
 
